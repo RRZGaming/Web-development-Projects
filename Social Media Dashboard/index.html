@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!--Materials Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Css File-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>SEARCH
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+        </header>
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <i class="bi bi-youtube"></i>
+                    <h4>RXCALIVER</h4>
+                    <p>Content Creator</p>
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">dashboard</span> Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">smart_display</span> content
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">bar_chart</span> Analytics
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">chat</span> Comments
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">subtitles</span> Subtitles
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">copyright</span> Copyright
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <span class="material-icons-outlined">settings</span> Settings
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main-container">
+            <div class="main-title">
+                <h2>DASHBOARD</h2>
+            </div>
+
+            <div class="main-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <h2>VIEWS</h2>
+                        <span class="material-icons-outlined">bar_chart</span>
+                    </div>
+                    <h1>14,953</h1>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <h2>SUBSCRIBER</h2>
+                        <span class="material-icons-outlined">subscriptions</span>
+                    </div>
+                    <h1>105</h1>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <h2>WATCH TIME(hours)</h2>
+                        <span class="material-icons-outlined">timer</span>
+                    </div>
+                    <h1>222.1</h1>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <h2>COMMENTS</h2>
+                        <span class="material-icons-outlined">forum</span>
+                    </div>
+                    <h1>962</h1>
+                </div>
+            </div>
+
+            <div class="products">
+                <div class="product-card">
+                    <h2 class="product-descrption">Latest Updates</h2>
+                    <p class="text-2">
+                        Hello I am Rajesh Pradhan and This is my Dashboard.
+                        This Dashboard Shows my Statistic on Social Media 
+                        and I hope I will update it more in future.
+                    </p>
+                    <button type="button" class="product-button">
+                        <span class="material-icons-outlined">add</span>
+                    </button>
+                </div>
+
+    
+
+                <div class="social-media">
+                    <div class="product">
+
+                        <div>
+                            <div class="product-icon background-blue">
+                                <i class="bi bi-twitter"></i>
+                            </div>
+                            <h1 class="text-green">+02</h1>
+                            <a class="text-secondary" href="https://x.com/home">Follow me on Twitter!!</a>
+                        </div>
+                    
+                        <div>
+                            <div class="product-icon background-purple">
+                                <i class="bi bi-instagram"></i>
+                            </div>
+                            <h1 class="text-green">+64</h1>
+                            <p class="text-secondary"><u>Follow me on Instagram !!</u></p>
+                        </div>
+
+                        <div>
+                            <div class="product-icon background-blue2">
+                                <i class="bi bi-discord"></i>
+                            </div>
+                            <h1 class="text-green">+151</h1>
+                            <a class="text-secondary" href="https://discord.gg/wayqx277">join me on Discord !!</a>
+                        </div>
+
+                        <div>
+                            <div class="product-icon background-blue">
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <h1 class="text-green">+86</h1>
+                            <a class="text-secondary" href="https://www.linkedin.com/in/pradhanrajesh56/">Follow me on Linkedin</a>
+                        </div>
+                    
+                    </div>
+                </div>
+
+            </div>
+
+
+        </main>
+    </div>
+
+    <!---JAVA SCRIPT-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
