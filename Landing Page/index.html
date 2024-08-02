@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" ><img src="img/logo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Elevate Your Adventure:<br>Unlock Unique Style with<span> Genshin Skins</span></h2>
+                <p>Tranform your Genshin Impact experience with our exclusive skins. Stand out on your adventures with unique styles that reflect your personality and make every moment in Teyvat unforgettable. Upgrade your journey today!</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgbox">
+                <img src="img/img1.png" class="Starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" onclick="imgSlider('img/img1.png');changecirclecolor('#1909fc')"></li>
+            <li><img src="img/thumb2.png" onclick="imgSlider('img/img2.png');changecirclecolor('#eb7495')"></li>
+            <li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png');changecirclecolor('#ff0000')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt="instagram"></a></li>
+        </ul>
+    </section>
+
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Starbucks').src=anything;
+        }
+        function changecirclecolor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background=color;
+        }
+    </script>
+</body>
+</html>
