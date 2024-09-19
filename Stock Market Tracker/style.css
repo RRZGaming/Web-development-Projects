@@ -1,0 +1,69 @@
+/* Dark theme styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2f;
+    color: #dcdcdc;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #ffffff;
+  }
+  
+  .dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .stock-card {
+    background-color: #2a2a40;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .stock-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  h2 {
+    color: #ff6b6b;
+    margin-bottom: 10px;
+  }
+  
+  .stock-info {
+    margin-bottom: 20px;
+  }
+  
+  .stock-info p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .stock-info .positive {
+    color: #2ecc71; /* Green for positive change */
+  }
+  
+  .stock-info .negative {
+    color: #e74c3c; /* Red for negative change */
+  }
+  
+  canvas {
+    width: 100%;
+    height: 200px;
+  }
+  

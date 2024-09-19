@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Market Tracker Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>Stock Market Tracker</h1>
+    </header>
+
+    <div class="dashboard">
+      <div class="stock-card">
+        <h2>Nifty 50</h2>
+        <div class="stock-info">
+          <p>Current Price: <span id="nifty50-price">$17,250.00</span></p>
+          <p>Change: <span id="nifty50-change" class="positive">+0.5%</span></p>
+        </div>
+        <canvas id="nifty50-chart"></canvas>
+      </div>
+
+      <div class="stock-card">
+        <h2>Bank Nifty</h2>
+        <div class="stock-info">
+          <p>Current Price: <span id="banknifty-price">$37,000.00</span></p>
+          <p>Change: <span id="banknifty-change" class="positive">+0.8%</span></p>
+        </div>
+        <canvas id="banknifty-chart"></canvas>
+      </div>
+
+      <div class="stock-card">
+        <h2>Sensex</h2>
+        <div class="stock-info">
+          <p>Current Price: <span id="sensex-price">$60,000.00</span></p>
+          <p>Change: <span id="sensex-change" class="positive">+0.7%</span></p>
+        </div>
+        <canvas id="sensex-chart"></canvas>
+      </div>
+
+      <div class="stock-card">
+        <h2>Nifty Midcap</h2>
+        <div class="stock-info">
+          <p>Current Price: <span id="niftymidcap-price">$8,950.00</span></p>
+          <p>Change: <span id="niftymidcap-change" class="positive">+0.3%</span></p>
+        </div>
+        <canvas id="niftymidcap-chart"></canvas>
+      </div>
+
+      <div class="stock-card">
+        <h2>HDFC Bank</h2>
+        <div class="stock-info">
+          <p>Current Price: <span id="hdfcbank-price">$1,600.00</span></p>
+          <p>Change: <span id="hdfcbank-change" class="positive">+0.6%</span></p>
+        </div>
+        <canvas id="hdfcbank-chart"></canvas>
+      </div>
+
+      <div class="stock-card">
+        <h2>NIFTY IT</h2>
+        <div class="stock-info">
+          <p>Current Price: <span id="niftyit-price">$31,200.00</span></p>
+          <p>Change: <span id="niftyit-change" class="positive">+0.4%</span></p>
+        </div>
+        <canvas id="niftyit-chart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
