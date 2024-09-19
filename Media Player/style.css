@@ -1,0 +1,116 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.music-player {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    padding: 20px;
+    margin-top: 50px;
+    position: relative;
+}
+
+h1 {
+    color: #ff5722;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff5722;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+input[type="file"] {
+    margin: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff5722;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+
+input[type="file"].hidden {
+    display: none;
+}
+
+.now-playing {
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: default;
+    display: inline-block;
+}
+
+.photo-container {
+    margin: 20px 0;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 5px solid #ff5722;
+}
+
+#volumeControl {
+    margin-top: 20px;
+    width: 200px;
+    -webkit-appearance: none;
+    background: #fff;
+    height: 5px;
+    border-radius: 5px;
+}
+
+#volumeControl::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #ff5722;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#volumeControl::-moz-range-thumb {
+    background: #ff5722;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#songInfo {
+    margin-top: 20px;
+}
